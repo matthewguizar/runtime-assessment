@@ -17,7 +17,8 @@ const addToZero = (arr, num) => {
         return false
 
 
-}//runtime: 0(n^2)
+}//runtime: 0(n)
+//space complexity: 0(n)
 
 console.log(addToZero([1,2,3,4,-2], 0))
 
@@ -31,7 +32,7 @@ const hasUniqueChars = (str) => {
     } return false
 
 }//runtime: 0(n)
-
+ //space complexity: 0(n)
 
 
 
@@ -43,6 +44,7 @@ const isPangram = (string) => {
 
 
 }//runtime:0(1)
+//space complexity: 0(1)
 
 
 
@@ -64,4 +66,5 @@ const findLongestWord = (str) => {
 
 
 }//runtime: 0(n)
+//space complexity: 0(n)
 
