@@ -17,7 +17,7 @@ const addToZero = (arr, num) => {
         return false
 
 
-}//runtime:
+}//runtime: 0(n^2)
 
 console.log(addToZero([1,2,3,4,-2], 0))
 
@@ -30,7 +30,7 @@ const hasUniqueChars = (str) => {
       return true
     } return false
 
-}//runtime: 
+}//runtime: 0(n)
 
 
 
@@ -42,7 +42,7 @@ const isPangram = (string) => {
     return (string.match(regex)).length === 26;
 
 
-}//runtime:
+}//runtime:0(1)
 
 
 
@@ -63,5 +63,5 @@ const findLongestWord = (str) => {
     return longestWord
 
 
-}//runtime:
+}//runtime: 0(n)
 
