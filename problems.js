@@ -54,17 +54,19 @@ const isPangram = (string) => {
 
 
 //PROBLEM 4
-const findLongestWord = (str) => {
-    let strSplit = str.split(' ')
-    let longestWord = 0
-    for (let i = 0; i< strSplit.length; i++){
-        if(strSplit[i].length > longestWord){
-            longestWord = strSplit[i].length
-        }
-    }
-    return longestWord
+function findLongestWord(arr){
+  // arr.sort((a,b) => b.length - a.length)
+  // return arr[0].length
 
+  let longest = arr[0]
 
-}//runtime: 0(n)
+  for(let i = 0;i < arr.length;i++){
+      if(longest.length < arr[i].length){
+          longest = arr[i]
+      }
+  }
+  return longest.length
+}
+//runtime: 0(n)
 //space complexity: 0(n)
 
